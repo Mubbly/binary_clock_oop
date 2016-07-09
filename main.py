@@ -21,11 +21,11 @@ class BinaryTime:
 
     def __init__(self, h: int, m: int, s: int):
         #                [1, 2, 4, 8]
-        self.hour_tens = self.int_to_bin_list(h / 10)
+        self.hour_tens = self.int_to_bin_list(h // 10)
         self.hour_ones = self.int_to_bin_list(h % 10)
-        self.minute_tens = self.int_to_bin_list(m / 10)
+        self.minute_tens = self.int_to_bin_list(m // 10)
         self.minute_ones = self.int_to_bin_list(m % 10)
-        self.second_tens = self.int_to_bin_list(s / 10)
+        self.second_tens = self.int_to_bin_list(s // 10)
         self.second_ones = self.int_to_bin_list(s % 10)
 
 
